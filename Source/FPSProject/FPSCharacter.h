@@ -31,6 +31,14 @@ public:
 	UFUNCTION()
 		void MoveRight(float Value);
 
+	//Start and Stop jump are in the provided character base class - Character jumping is tied to the bPressedJump variable
+	// Sets jump flag when key is pressed.
+	UFUNCTION()
+		void StartJump();
+
+	// Clears jump flag when key is released.
+	UFUNCTION()
+		void StopJump();
 	
 	
 };
